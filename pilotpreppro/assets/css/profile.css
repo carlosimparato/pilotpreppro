@@ -1,0 +1,88 @@
+/* styles.css */
+@import url('general.css');
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: url('../css/images/pexels-captainsopon-3402846.jpg') no-repeat center center/cover;
+    color: white;
+    position: relative;
+    max-width: 100%; /* Asegúrate de que no se desborde del ancho de la pantalla */
+}
+
+.bloks {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%; /* Evitar que los bloques se extiendan más allá del ancho de la pantalla */
+}
+
+.profile-section-data {
+    flex: 1;
+    min-width: 200px; /* Reduce la min-width para pantallas pequeñas */
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group input {
+    width: 85%; /* Asegúrate de que los inputs ocupen el 100% de su contenedor */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #00d7ff;
+    color: white;
+    border: none;
+    border-radius: 17px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #009bbf;
+}
+
+.btn-danger {
+    background-color: #ff0000;
+}
+
+.btn-danger:hover {
+    background-color: #970404;
+}

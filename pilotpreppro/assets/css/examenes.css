@@ -1,0 +1,134 @@
+/* styles.css */
+@import url('general.css');
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la sección hero */
+.hero {
+    padding: auto;
+    background: url('../css/images/pexels-captainsopon-3402846.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.container-test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%; /* Ajusta la altura para dejar espacio para el botón */
+    width: 70%; /* Ocupa el 70% del ancho */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Añade espacio debajo del contenedor para el botón */
+}
+
+/* Estilos para los circle checks */
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #3a3939;
+}
+
+.circle-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.circle-option input[type="radio"] {
+    display: none;
+}
+
+.circlecheck {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.circle-option input[type="radio"]:checked + label .circlecheck {
+    background-color: #007bff;
+}
+
+.circlecheck::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.circle-option input[type="radio"]:checked + label .circlecheck::after {
+    display: block;
+}
+
+/* Estilos para el contenedor del select */
+.select-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Estilos para el botón */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que el botón esté centrado */
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

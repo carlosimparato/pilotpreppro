@@ -1,0 +1,137 @@
+/* styles.css */
+@import url('general.css');
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Estilos para la sección hero */
+.hero {
+    padding: auto;
+    background: url('../css/images/pexels-captainsopon-3402846.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+
+
+/* Estilos del formulario de inicio de sesión */
+.login-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 3px solid #fff;
+    border-radius: 16px;
+    padding: 30px;
+    width: 420px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-top: 10px;
+    margin-bottom: 31px;
+    color: white;
+    font-size: 35px;
+}
+
+/* Agrupación de inputs */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Estilos para inputs con y sin icono */
+.input-icon input,
+.input-group input {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon input {
+    padding-right: 35px; /* Espacio para el icono */
+}
+
+.input-icon i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Estilos para el botón */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #00d7ff;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #21b4ce;
+}
+
+/* Estilos para el registro */
+.register {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register a {
+    text-decoration: none;
+    color: #00d7ff;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/* esto es para el formulaerio del perfil */
+.container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 3px solid #fff;
+    border-radius: 16px;
+    padding: 30px;
+    width: 420px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
